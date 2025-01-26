@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Vault Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1>Digital Lockbox Password Generator</h1>
+      <p>Generate Unbreakable Passwords.</p>
+      
+      <div class="password-box">
+        <span class="password">Click Generate Password</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      
+      <div class="options">
+        <label>
+          <input type="checkbox" class="include-numbers" name="numbers"> Include Numbers
+        </label>
+        <label>
+          <input type="checkbox" class="include-symbols" name="symbol"> Include Symbols
+        </label>
+        <label>
+          <input type="checkbox" class="include-uppercase" name="uppercase"> Include Uppercase
+        </label>
+        <label>
+          <input type="checkbox" class="include-lowercase" name="lowercase" checked > Include Lowercase
+        </label>
+        <label>
+          Length: <input type="range" class="length" min="8" max="32" value="8">
+          <span class="length-value">8</span>
+        </label>
+      </div>
+      
+      <button class="generate-btn">Generate Password</button>
+    </div>
+
+    <section class="copied-address">
+      <p>Copied to Clipboard Address</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
